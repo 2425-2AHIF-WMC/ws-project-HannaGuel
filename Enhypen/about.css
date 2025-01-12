@@ -1,0 +1,52 @@
+/* Reset für sauberen Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Hintergrund schwarz */
+    color: #fff; /* Text weiß */
+    display: flex;
+    justify-content: flex-start; /* Sidebar an den linken Rand setzen */
+    align-items: flex-start; /* Sidebar oben ausrichten */
+    min-height: 100vh; /* Keine Scrollbar */
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column; /* Die Links vertikal anordnen */
+    align-items: flex-start; /* Links linksbündig ausrichten */
+    padding: 20px;
+    margin-top: 20px;
+    width: 200px; /* Breite der Sidebar */
+}
+
+.link-button {
+    color: #fff; /* Textfarbe weiß */
+    text-decoration: none; /* Keine Unterstreichung */
+    font-size: 1.2rem; /* Schriftgröße der Links */
+    margin-bottom: 10px; /* Abstand zwischen den Links */
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+.link-button:hover {
+    background-color: #444; /* Hintergrundfarbe ändern bei Hover */
+    border-radius: 5px; /* Abgerundete Ecken beim Hover */
+}
+
+.content {
+    margin-left: 220px; /* Abstand von der Sidebar, um das Bild nicht zu überlappen */
+    padding: 20px;
+}
+
+.content img {
+    width: 100%; /* Bild auf volle Breite des Containers setzen */
+    max-width: 500px; /* Maximalbreite auf 500px beschränken */
+    height: auto;
+    border-radius: 10px;
+}

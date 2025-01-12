@@ -1,0 +1,72 @@
+/* Reset für sauberen Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.container img {
+    width: 100%; /* Maximale Bildbreite */
+    max-width: 500px; /* Maximale Bildgröße */
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 10px;
+}
+
+/* Style für den Lightstick-Bereich */
+.lightstick-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+.lightstick-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px; /* Abstand zwischen Bild und Text */
+}
+
+.lightstick-text {
+    font-size: 1rem;
+    max-width: 500px;
+    text-align: left;
+}
+
+.lightstick-text p {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,62 @@
+/* General Style Rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+}
+
+.song {
+    display: flex;
+    align-items: center;  /* Vertically center image and text */
+    margin-bottom: 40px;
+    background-color: #222; /* Dark background for each song block */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.song-image {
+    flex: 1;  /* Image takes available space */
+    padding-right: 20px;
+}
+
+.song-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.song-description {
+    flex: 2;  /* Text area takes more space */
+    padding-left: 20px;
+}
+
+.song-description h2 {
+    font-size: 1.8em;
+    color: #fff; /* White title text */
+    margin-bottom: 10px;
+}
+
+.song-description p {
+    font-size: 1em;
+    color: #ddd; /* Light gray text */
+}
+
+.song-description strong {
+    font-weight: bold;
+}
